@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-   "repository": {
-    "type": "git",
-    "url": "https://github.com/Sham-Sbehat/ImageSearchEngine.git"
-  },
+  "homepage": "https://Sham-Sbehat.github.io/ImageSearchEngine",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Sham-Sbehat/ImageSearchEngine.git"
+},
+
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

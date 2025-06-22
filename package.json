@@ -5,10 +5,9 @@
   "type": "module",
   "homepage": "https://Sham-Sbehat.github.io/ImageSearchEngine",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/Sham-Sbehat/ImageSearchEngine.git"
-},
-
+    "type": "git",
+    "url": "https://github.com/Sham-Sbehat/ImageSearchEngine.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

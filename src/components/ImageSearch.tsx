@@ -25,6 +25,7 @@ export const ImageSearch: React.FC = () => {
     
       setHasMore(response.total_pages > 1);
     } catch (err) {
+        console.error(err); 
       setError('Failed to load trending images');
     } finally {
       setLoading(false);
@@ -42,6 +43,7 @@ export const ImageSearch: React.FC = () => {
       setHasMore(response.total_pages > 1);
       setPage(1);
     } catch (err) {
+        console.error(err); 
       setError('فشل في البحث عن الصور');
     } finally {
       setLoading(false);
@@ -57,6 +59,7 @@ export const ImageSearch: React.FC = () => {
       setHasMore(response.total_pages > page + 1);
       setPage(page + 1);
     } catch (err) {
+        console.error(err); 
       setError('فشل في تحميل المزيد من الصور');
     } finally {
       setLoading(false);
@@ -67,6 +70,7 @@ export const ImageSearch: React.FC = () => {
     try {
       await ImageServiceWithInterceptor.downloadImage(imageId);
     } catch (err) {
+        console.error(err); 
       setError('فشل في تحميل الصورة');
     }
   };
